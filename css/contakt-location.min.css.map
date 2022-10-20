@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/components/section-footer/contakt-location.scss"
+    ],
+    "names": [],
+    "file": "contakt-location.min.css"
+}

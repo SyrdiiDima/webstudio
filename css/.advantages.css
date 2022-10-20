@@ -1,0 +1,22 @@
+.section-advantages {
+  padding-top: 94px;
+}
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages__items {
+  width: 270px;
+}
+
+.advantages__items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages__title {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=.advantages.css.map */

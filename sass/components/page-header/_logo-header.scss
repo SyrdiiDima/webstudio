@@ -1,0 +1,25 @@
+.logo {
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: $primary-text-color;
+
+  &__text {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+}

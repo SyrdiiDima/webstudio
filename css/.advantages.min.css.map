@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,AAAC,CAClB,WAAW,CAAE,IAAI,CAClB,AAED,AAAA,WAAW,AAAC,CACV,OAAO,CAAE,IAAI,CAYd,AAVE,AAAD,kBAAQ,AAAC,CACP,KAAK,CAAE,KAAK,CAKb,AANA,AAGC,kBAHM,AAGL,IAAK,CAAA,WAAW,CAAE,CACjB,YAAY,CAAE,IAAI,CACnB,AAEF,AAAD,kBAAQ,AAAC,CACP,aAAa,CAAE,IAAI,CACpB",
+    "sources": [
+        "../sass/components/section-advantages/.advantages.scss"
+    ],
+    "names": [],
+    "file": ".advantages.min.css"
+}

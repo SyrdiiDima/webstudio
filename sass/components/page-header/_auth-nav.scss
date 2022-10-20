@@ -1,0 +1,132 @@
+// .auth-nav {
+//   display: none;
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-left: 84px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     flex-wrap: nowrap;
+//     margin-left: 0px;
+//     &__item:not(:last-child) {
+//       margin-right: 30px;
+//     }
+//   }
+// }
+
+// .auth-conteiner {
+//   margin-left: auto;
+// }
+
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     font-size: 14px;
+//   }
+// }
+
+//   @media screen and (min-width: 1200px) {
+//     width: 16px;
+//     height: 12px;
+//     margin-right: 10px;
+//   }
+// }
+
+//   @media screen and (min-width: 1200px) {
+//     width: 10px;
+//     height: 16px;
+//     margin-right: 10px;
+//   }
+// }
+
+// .auth-nav__item:first-child {
+//   margin-bottom: 10px;
+//   @media screen and (min-width: 1200px) {
+//     margin-bottom: 0;
+//   }
+// }
+
+@media screen and (min-width: 768px) {
+  .auth-nav__mail,
+  .auth-nav__number {
+    text-decoration: none;
+    display: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: $secondly-text-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  .auth-nav__icon-phone {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+    fill: $secondly-text-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+      margin-right: 10px;
+    }
+
+    .auth-nav__number:hover &,
+    .auth-nav__number:focus & {
+      fill: $accent-color;
+    }
+  }
+  .auth-nav__icon-mail {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    fill: $secondly-text-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .auth-nav__mail:hover &,
+    .auth-nav__mail:focus & {
+      fill: $accent-color;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+    }
+  }
+
+  .auth-nav__mail {
+    margin-bottom: 10px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+      margin-right: 30px;
+    }
+  }
+
+  .auth-nav {
+    margin-left: 84px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 305px;
+      display: flex;
+    }
+  }
+}

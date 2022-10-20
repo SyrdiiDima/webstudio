@@ -1,0 +1,105 @@
+.footer-form {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 247px;
+    padding-right: 137px;
+    padding-left: 151px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    padding-top: 72px;
+    padding-bottom: 94px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: $white-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+
+  &__bag {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+
+    & input {
+      outline: none;
+
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background-color: var(--footer-color);
+      padding-left: 16px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 1.25;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+
+      color: rgba(255, 255, 255, 0.6);
+
+      @media screen and (min-width: 1200px) {
+        height: 50px;
+        width: 358px;
+      }
+    }
+  }
+}
+
+.button-subscribe {
+  width: 200px;
+  height: 50px;
+  background-color: $accent-color;
+  color: $white-color;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 12px;
+  outline: none;
+  position: relative;
+  padding-left: 29px;
+  padding-right: 28px;
+  margin-top: 20px;
+
+  @media screen and(min-width:1200px) {
+    margin-top: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+
+  &__text {
+    display: block;
+    width: 109px;
+  }
+
+  &__send-icon {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+  }
+}

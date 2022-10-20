@@ -1,0 +1,99 @@
+.footer {
+  background-color: $footer-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  position: relative;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    &__section {
+      display: flex;
+    }
+
+    &__information {
+      width: 229px;
+    }
+  }
+}
+.footer__address {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: absolute;
+    top: 108px;
+    left: 76px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 20px;
+    padding-bottom: 60px;
+    text-align: left;
+  }
+}
+.footer__logo {
+  display: block;
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: $primary-text-color;
+
+  &--white {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    left: 115px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 0;
+    text-align: left;
+  }
+}
+
+.footer__location {
+  margin-bottom: 9px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+  color: $white-color;
+}
+
+.footer__contakt {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.logo__text-footer {
+  color: $white-color;
+}

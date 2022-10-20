@@ -1,0 +1,143 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  z-index: 5;
+  &:hover .icon-menu,
+  &:focus .icon-menu {
+    fill: $accent-color;
+  }
+  &:hover .icon-cross,
+  &:focus .icon-cross {
+    fill: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-conteiner {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $white-color;
+    padding: 40px 48px;
+    z-index: 4;
+
+    &.is-open {
+      display: block;
+    }
+
+    .site-nav__item:not(:last-child) {
+      margin-bottom: 35px;
+    }
+
+    .site-nav__link {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      letter-spacing: 0.02em;
+      color: $primary-text-color;
+      margin-bottom: 35px;
+
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
+
+    .auth-nav__item-number {
+      position: absolute;
+      top: 562px;
+    }
+
+    .auth-nav__item-mail {
+      position: absolute;
+      top: 634px;
+    }
+
+    .auth-nav__number {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+      letter-spacing: 0.02em;
+      color: $accent-color;
+    }
+
+    .auth-nav__mail {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+      color: $secondly-text-color;
+    }
+    .auth-nav__icon-mail,
+    .auth-nav__icon-phone {
+      display: none;
+    }
+    .menu-item {
+      display: flex;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+
+    .menu-link {
+      color: $accent-color;
+    }
+
+    .menu-social-links {
+      display: flex;
+      position: absolute;
+      top: 726px;
+    }
+
+    .menu-link::after {
+      content: "";
+      margin-left: 10px;
+      width: 22px;
+      height: 0px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    .menu-link#not-dash::after {
+      display: none;
+    }
+  }
+}
